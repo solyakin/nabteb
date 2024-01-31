@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NABTEB</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-wrapper">
+            <div class="logo-wrapper">
+                <img src="./assets/logo1 1.svg" alt="">
+                <p>NABTEB DIGITAL CERTIFICATE</p>
+            </div>
+            <div class="nav-item">
+                <ul>
+                    <li>Home</li>
+                    <li>About us</li>
+                    <li>Features</li>
+                    <li>Blog</li>
+                    <li>Contact us</li>
+                </ul>
+                <div class="login-btn">
+                    <button>Login</button>
+                </div>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <img src="./assets//hamburger.svg" alt="">
+            </div>
+        </div>
+        <div class="mobile-menu">
+            <div class="mobile-heading">
+                <img src="./assets/logo1 1.svg" alt="">
+                <img src="./assets/close.png" alt="" class="close-btn" onclick="closeMenu()">
+            </div>
+            <ul>
+                <li>Home</li>
+                <li>About us</li>
+                <li>Features</li>
+                <li>Blog</li>
+                <li>Contact us</li>
+            </ul>
+            <div class="mobile-btn">
+                <button>Login</button>
+            </div>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero-wrapper">
+            <div class="hero-left-content">
+                <div class="left-wrapper">
+                    <h1>The #1 Digital Certificate System In Nigeria</h1>
+                    <p>Allows students and examination bodies to digitalize its physical certificate and easily access them anywhere around the globe</p>
+                    <div class="hero-search">
+                        <input type="text" placeholder="Enter Examination Number" class="input">
+                        <!-- <div class="input-wrapper">
+                        </div> -->
+                        <button>Submit</button>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-right-content">
+                <img src="./assets/Group 66.svg" alt="">
+            </div>
+        </div>
+        <img src="./assets/Ellipse 5.png" alt="" class="hero-bg">
+        <img src="./assets/mobile-bg.png" alt="" class="mobile-bg">
+    </section>
+
+    <!-- About us -->
+    <section class="about container">
+        <div class="title">
+            <h2>About Us</h2>
+        </div>
+        <div class="about-content">
+            <img src="./assets/Group 111.png" alt="" class="desktop">
+            <img src="./assets/Group 111.svg" alt="" class="mobile">
+            <div class="about-text">
+                <h3>Why use our Product?</h3>
+                <div class="about-item active" onclick="toggleAbout(0)">
+                    <div class="icon-wrapper">
+                        <img src="./assets/Vector.svg" alt="" class="icon">
+                    </div>
+                    <div class="text-wrapper">
+                        <h4 class="title">Access Certificate Online</h4>
+                        <p class="detail">Digitalize physical certificates and enable stakeholders access the certification online and anywhere they are</p>
+                    </div>
+                </div>
+                <div class="about-item" onclick="toggleAbout(1)">
+                    <div class="icon-wrapper">
+                        <img src="./assets/Vector.svg" alt="" class="icon">
+                    </div>
+                    <div class="text-wrapper">
+                        <h4 class="title">Share Certificate Across Globe</h4>
+                        <p class="detail">Easy access for candidates to share their certificates and access it anywhere across the globe</p>
+                    </div>
+                </div>
+                <div class="about-item" onclick="toggleAbout(2)">
+                    <div class="icon-wrapper">
+                        <img src="./assets/Vector.svg" alt="" class="icon">
+                    </div>
+                    <div class="text-wrapper">
+                        <h4 class="title">Promote Management</h4>
+                        <p class="detail">Helps organization bodies to administrative time, cost investment, data, effort and data/ certification loss</p>
+                    </div>
+                </div>
+                <div class="about-item" onclick="toggleAbout(3)">
+                    <div class="icon-wrapper">
+                        <img src="./assets/Vector.svg" alt="" class="icon">
+                    </div>
+                    <div class="text-wrapper">
+                        <h4 class="title">Helps to eliminate and curb the use of fake certificates</h4>
+                        <p class="detail">Allows confirmation of certificates easily without too much stress or hassle</p>
+                    </div>
+                </div>
+                <div class="about-item" onclick="toggleAbout(4)">
+                    <div class="icon-wrapper">
+                        <img src="./assets/Vector.svg" alt="" class="icon">
+                    </div>
+                    <div class="text-wrapper">
+                        <h4 class="title">Eliminate Use Of Fake Certificate</h4>
+                        <p class="detail">Helps to eliminate and curb the use of fake certificates</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- banner -->
+    <section class="banner">
+        <div class="container banner-list">
+            <div class="banner-item">
+                <h2>32</h2>
+                <p>Years of Existence</p>
+            </div>
+            <div class="banner-item">
+                <h2>100k</h2>
+                <p>Users worldwide</p>
+            </div>
+            <div class="banner-item">
+                <h2>15%</h2>
+                <p>Improvement in customer satisfaction rating</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="container">
+            <div class="features-heading">
+                <h3>Some Of Our Features</h3>
+                <p>Explore benefits of this system below </p>
+            </div>
+            <div class="features-list">
+                <div class="feature">
+                    <img src="./assets/Check Mark.svg" alt="">
+                    <h5>Validation</h5>
+                    <p>Allows organization to validate certificates</p>
+                </div>
+                <div class="feature">
+                    <img src="./assets/Check Vote.svg" alt="">
+                    <h5>Verification</h5>
+                    <p>Instant verification for institutions and removes administrative backlog of request.</p>
+                </div>
+                <div class="feature">
+                    <img src="./assets/Happy Client.svg" alt="">
+                    <h5>Confirmation</h5>
+                    <p>Organizations and institutions can now seamlessly confirm certificate on a secured platform. </p>
+                </div>
+                <div class="feature">
+                    <img src="./assets/Cloud Upload.svg" alt="">
+                    <h5>Storage</h5>
+                    <p>Provides a replacement mechanism for loss or damage of certificates​  </p>
+                </div>
+                <div class="feature">
+                    <img src="./assets/Shield.svg" alt="">
+                    <h5>Safety</h5>
+                    <p>Prevents unauthorized users from accessing the certificates </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonies -->
+    <section class="testimonies">
+        <div class="container">
+            <div class="inner-wrapper">
+                <div class="testimonies-heading">
+                    <div class="line"></div>
+                    <h4>WHAT OUR CUSTOMERS ARE SAYING</h4>
+                </div>
+                <div class="testimonies-list">
+                    <div class="testimony-card">
+                        <div class="top-icon">
+                            <img src="./assets/quote.svg" alt="">
+                        </div>
+                        <div class="testimony">
+                            <h4>Nice Support!!!</h4>
+                            <p>I was able to check my result smoothly and even acess my certificates without any hassle.</p>
+                        </div>
+                        <div class="profile">
+                            <img src="/assets/Vector.png" class="vector" alt="">
+                            <div class="user-detail">
+                                <img src="./assets/Ellipse 1.svg" alt="">
+                                <div class="name">
+                                    <h4>Oluwanisola Samuel</h4>
+                                    <p>Engineer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimony-card">
+                        <div class="top-icon">
+                            <img src="./assets/quote.svg" alt="">
+                        </div>
+                        <div class="testimony">
+                            <h4>Excellent Product!!</h4>
+                            <p>I was able to check my result smoothly and even acess my certificates without any hassle.</p>
+                        </div>
+                        <div class="profile">
+                            <img src="/assets/Vector.png" class="vector" alt="">
+                            <div class="user-detail">
+                                <img src="./assets/Ellipse 2.svg" alt="">
+                                <div class="name">
+                                    <h4>Abimbola Daniel</h4>
+                                    <p>Software Developer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- blog -->
+    <section class="blogs-section">
+        <div class="container">
+            <div class="blog-heading">
+                <div class="line"></div>
+                <h4>BLOG SECTION</h4>
+                <p>Check out our latest updates here</p>
+            </div>
+            <div class="blogs">
+                <div class="blog">
+                    <img src="./assets/Rectangle 39.svg" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis nam id facilis, provident </p>
+                    <div class="read-cta">
+                        <a href="#">Read more</a>
+                        <img src="./assets/chevronRight.svg" alt="">
+                    </div>
+                </div>
+                <div class="blog">
+                    <img src="./assets/Rectangle 40.svg" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis nam id facilis, provident </p>
+                    <div class="read-cta">
+                        <a href="#">Read more</a>
+                        <img src="./assets/chevronRight.svg" alt="">
+                    </div>
+                </div>
+                <div class="blog">
+                    <img src="./assets/Rectangle 41.svg" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis nam id facilis, provident </p>
+                    <div class="read-cta">
+                        <a href="#">Read more</a>
+                        <img src="./assets/chevronRight.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-wrapper">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="item">
+                        <h4>Find Us</h4>
+                        <p>No. 1, Benin-Agbor RoadIkpoba Hill, P.M.B 1747, Benin-City,Edo State, Nigeria.</p>
+                    </div>
+                    <div class="item">
+                        <h4>Contact</h4>
+                        <p>Open Monday to Friday 
+                            <br>
+                            T+2348078840770
+                        </p>
+                    </div>
+                    <div class="item">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li>About us</li>
+                            <li>Careers</li>
+                            <li>Contact us</li>
+                            <li>Privacy policy</li>
+                            <li>FAQs</li>
+                            <li>Mission</li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li>E: nabtebhqt@yahoo.com</li>
+                            <li>E:helpdesk@nabtebnigeria.or</li>
+                            <li> Contact: State and Zonal</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="social-bar container">
+            <div class="socials">
+                <img src="./assets/facebook.svg" alt="">
+                <img src="./assets/twitter.svg" alt="">
+                <img src="./assets/insta.svg" alt="">
+                <img src="./assets/pininterest.svg" alt="">
+            </div>
+            <div class="copyright">
+                <img src="./assets/copyright.svg" alt="">
+                <p>Copyright 2022 by Vatebra.com</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const hamburger = document.querySelector('.mobile-menu');
+            hamburger.classList.add('active');
+        }
+        function closeMenu() {
+            const hamburger = document.querySelector('.mobile-menu');
+            hamburger.classList.remove('active');
+        }
+        function toggleAbout(index) {
+            const faqItem = document.querySelectorAll('.about-item')[index];
+            faqItem.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

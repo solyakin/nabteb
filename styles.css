@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: "Rubik", sans-serif;
+}
+.root{
+    display: flex;
+    height: 100vh;
+    /* overflow-y: none; */
+}
+.right-content{
+    position: relative;
+    background: white;
+}
+.login-form{
+    padding: 10em;
+}
+.register-form{
+    padding: 2em 10em;
+}
+.right-content form{
+    width: 430px;
+    /* margin: 0 auto; */
+}
+.register-form .title{
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.register-form .title a{
+    text-decoration: none;
+    color: #005E39;
+    font-weight: 500;
+}
+.login-form .title{
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+.title h2{
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.title p{
+    color: #8692A6;
+    font-weight: 300;
+    font-size: 1rem;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 1rem;
+}
+.form-group label{
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #67748E;
+}
+.form-group input, .form-group select{
+    padding: 16px;
+    border: 1px solid #8691A6;
+    font-weight: 300;
+    font-size: 1rem;
+    outline: none;
+    color: #67748E;
+}
+::placeholder{
+    color: #B9B9B9;
+    font-weight: 200;
+}
+.login-btn button{
+    margin-top: 2rem;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    background: #005E39;
+    padding: 20px;
+    color: white;
+    cursor: pointer;
+}
+.login-btn a{
+    text-decoration: none;
+    color: white;
+}
+.login-btn button:hover{
+    opacity: 0.95;
+}
+.action-btn{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+.action-btn a{
+    text-decoration: none;
+}
+.action-btn .register{
+    color: #005E39;
+    font-weight: 500;
+}
+.action-btn .forget-password{
+    color: #67748E;
+    font-weight: 300;
+}
+.copyright{
+    position: absolute;
+    bottom: 0px;
+    left: 12rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #B9B9B9;
+    font-weight: 300;
+}
+
+
+@media screen and (max-width: 768px) {
+    .root{
+        display: block;
+    }
+    .left-content{
+        display: none;
+    }
+    .right-content{
+        height: 100vh;
+    }
+    .login-form, .register-form{
+        padding: 3%;
+    }
+    .right-content form{
+        width: 100%;
+    }
+    .copyright{
+        left: 0;
+        right: 0;
+        bottom: 30px;
+        justify-content: center;
+    }
+    .register-form .title{
+        margin-top: 2.3rem;
+    }
+}

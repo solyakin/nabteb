@@ -1,0 +1,201 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: "Rubik", sans-serif;
+}
+header{
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 3rem;
+}
+.container{
+    max-width: 86rem;
+    width: 100%;
+    margin: 10px auto;
+}
+.dropdown{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.main-wrapper{
+    display: flex;
+}
+.sidebar{
+    padding: 20px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+}
+.sidebar a{
+    text-decoration: none;
+}
+.sidebar .item{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px;
+    margin-bottom: 1.8rem;
+}
+.sidebar .item.active{
+    background: #005E39;
+    color: white;
+    border-radius: 5px;
+}
+.sidebar .item p{
+    font-weight: 300;
+    color: #005E39;
+}
+.sidebar .item.active p{
+    color: white;
+}
+.dashboard-main{
+    background-color: #E9ECEF;
+    padding: 20px;
+    flex: auto;
+    height: 100vh;
+}
+.overview{
+    background: white;
+    padding: 20px;
+    border-radius: 6px;
+}
+.overview .title{
+    color: #5E5873;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.overview .overview-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    width: 100%;
+}
+.overview .request{
+    display: flex;
+    gap: 12px;
+    padding: 40px;
+    border-radius: 5px;
+}
+.overview .request:first-child{
+    background: #D3DBFF40;
+}
+.overview .request:nth-child(2){
+    background: #EFFFF4;
+}
+.overview .request:nth-child(3){
+    background: #FFF9EC;
+}
+.request h4{
+    font-weight: 500;
+    color: #005E39;
+}
+.request p{
+    margin-top: 0.5rem;
+    font-weight: 400;
+    color: #6E6B7B;
+}
+.request h4.red{
+    color: #D40E1F;
+}
+
+
+.manage-wallet{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.2rem;
+}
+.manage-wallet button{
+    width: 120px;
+    padding: 12px;
+    text-align: center;
+    color: white;
+    background: #4DA54B;
+    border: none;
+}
+.history-table{
+    margin-top: 1.2rem;
+}
+table{
+    width: 100%;
+}
+table th{
+    font-weight: 400;
+    padding: 1rem;
+}
+table .thead{
+    background: transparent;
+}
+table td{
+    font-weight: 400;
+    text-align: center;
+    padding: 1rem;
+    color: #7A7A7A;
+    font-size: 14px;
+}
+table tbody > tr{
+    background: white;
+}
+table .credit{
+    color: #4DA54B;
+}
+
+table .action{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.top-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+.search-wrapper input{
+    padding: 12px;
+    border: none;
+    outline: none;
+    padding-left: 0px;
+}
+.search-wrapper{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 2px 10px;
+}
+.search-wrapper, .certificate .download-csv{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.certificate{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.certificate .new-certificate{
+    background-color: #4DA54B;
+    color: white;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    border-radius: 5px;
+}
+.certificate .download-csv{
+    padding: 12px;
+    border-radius: 5px;
+    background: transparent;
+    width: 120px;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}

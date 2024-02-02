@@ -8,14 +8,17 @@ body{
 .root{
     display: flex;
     height: 100vh;
-    /* overflow-y: none; */
+    overflow: none;
+}
+.left-content img{
+    height: 100vh;
 }
 .right-content{
     position: relative;
     background: white;
 }
 .login-form{
-    padding: 10em;
+    padding: 8em 10em;
 }
 .register-form{
     padding: 2em 10em;
@@ -109,8 +112,8 @@ body{
 }
 .copyright{
     position: absolute;
-    bottom: 0px;
-    left: 12rem;
+    bottom: 20px;
+    left: 15rem;
     display: flex;
     align-items: center;
     gap: 12px;
